@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- internationalization -->
+<html>
+
+<head>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <h1>Contact Page</h1>
+    <!-- Forms -->
+    <form>
+        <div>
+            <label for="txtFName">Firstname</label>
+            <input id="txtFName" type="text" placeholder="Firstname" />
+        </div>
+        <br />
+        <div>
+            <label for="txtLName">Lastname</label>
+            <input type="text" id="txtLName" placeholder="Lastname" />
+        </div>
+        <br />
+        <div>
+            <label for="radioMale">Male</label>
+            <input name="gender" type="radio" id="radioMale" />
+
+            <label for="radioFeMale">Female</label>
+            <input name="gender" type="radio" id="radioFeMale" />
+        </div>
+        <br />
+        <div>
+            <label for="selectCourse">Courses</label>
+            <select id="selectCourse">
+                <option>--select--</option>
+                <optgroup label="Backend">
+                    <option>Java</option>
+                    <option>C#</option>
+                    <option>Python</option>
+                </optgroup>
+                <optgroup label="Frontend">
+                    <option>Javascript</option>
+                    <option>React</option>
+                    <option>Angular</option>
+                </optgroup>
+            </select>
+        </div>
+        <br />
+        <div>
+            <label for="chkJava">Java</label>
+            <input type="checkbox" value="Java">
+
+            <label for="chkC#">C#</label>
+            <input type="checkbox" value="C#">
+
+            <label for="chkPython">Python</label>
+            <input type="checkbox" value="Python">
+        </div>
+        <br />
+        <input type="color">
+        <input type="range" value="50" />
+        <input type="file" multiple />
+        <input type="password" placeholder="Password" />
+        <input type="button" value="Save">
+        <input type="submit" value="Save" />
+        <textarea rows="20"></textarea>
+
+        <button> Save </button>
+    </form>
+
+</body>
+
+</html>
