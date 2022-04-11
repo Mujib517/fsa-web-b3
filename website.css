@@ -1,0 +1,55 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #000;
+    height: 30px;
+    vertical-align: middle;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.brand {
+    float: left;
+    color: white;
+    padding: 5px;
+}
+
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+/* absolute units */
+/* relative units */
+/* mobile first development */
+/* Responsive website */
+.hero {
+    width: 100%;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 10px;
+}
