@@ -2,7 +2,7 @@
 // artithmatic operators: +,-,*,/,%
 // conditional operators: <,>,<=,>=, ==, === (strict euqlity), !=, !==
 // Logical operators: &&, ||, !
-// bitwise operator
+// bitwise operator << >> ^
 // unary operators: ++, --, pre increment (increment first, assignemnt next), 
 // post increment (assignment first, increment next)
 
@@ -23,7 +23,6 @@
 // console.log(a * b);
 // console.log(a / b);
 // console.log(b % a);
-
 
 var age = 30;
 
@@ -51,8 +50,8 @@ A   !A
 // 0000 0001
 // 0000 0000
 // 0000 0000 0000
-var y = 1 << 5; // 2^x
 
-var z = 100000 >> 4;
+var y = 1 << 5; // 2^x
+var z = 100000 >> 4;  // 1/2^x
 
 console.log(z);
