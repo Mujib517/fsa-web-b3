@@ -1,10 +1,11 @@
+// object initializers
 var m1 = {
     color: 'Black',
     width: 5,
     height: 7,
     call: function (number) {
         console.log("Calling...", number);
-    },
+    }
 };
 
 var m2 = {
