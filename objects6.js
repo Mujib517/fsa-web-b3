@@ -5,8 +5,6 @@ function Mobile(clr) {
     this.width = 5; // 8 bytes
     this.height = 7; // 8 bytes
     this.color = clr; // 8 bytes
-
-    return this;
 }
 
 Mobile.prototype.PI = 3.14;

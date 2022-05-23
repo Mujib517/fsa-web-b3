@@ -5,6 +5,9 @@
 // construction
 // class
 // advanced Object.create
+// this keyword
+// asynchronous programming
+// ES6 concepts
 class AbstractMobile {
 
     constructor() {
@@ -15,10 +18,7 @@ class AbstractMobile {
         console.log("Message");
     }
 
-    dateTime() {
-
-    }
-
+    dateTime() { }
 }
 
 class Mobile extends AbstractMobile {
