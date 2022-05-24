@@ -38,6 +38,6 @@ var p3 = {
 var products = [p1, p2, p3];
 
 if (p1.stock < 10) {
-    var res = "only " + p1.stock + " left";
+    var res = "only " + stock + " left";
     console.log(res);
 }
