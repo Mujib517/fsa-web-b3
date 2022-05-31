@@ -1,8 +1,11 @@
 function addAsync(a, b) {
     var p = new Promise(function (res, rej) {
         setTimeout(function () {
-            var c = a + b;
-            res(c);
+            if (a === 0) rej("Invalid input");
+            else {
+                var c = a + b;
+                res(c);
+            }
         }, 2000);
     });
 
@@ -34,14 +37,37 @@ function mulAsync(a, b) {
 // parallel
 // independent
 // sequentially 
-addAsync(10, 20).then(function (res) {
-    console.log('add', res);
-});
 
-subAsync(10, 20).then(function (res) {
-    console.log('sub', res);
-});
+// addAsync(10, 20).then(function (res) {
+//     console.log('add', res);
+// });
 
-mulAsync(10, 20).then(function (res) {
-    console.log('mul', res);
-});
+// subAsync(10, 20).then(function (res) {
+//     console.log('sub', res);
+// });
+
+// mulAsync(10, 20).then(function (res) {
+//     console.log('mul', res);
+// });
+// pending, resolved, rejected
+// promise caches result
+// promise gives you only one value
+var prms = addAsync(10, 20);
+
+console.log(prms); // pending
+
+prms
+    .then(function (res) {
+        console.log(prms);
+    })
+    .catch(function (err) {
+        console.log(prms);
+    });
+
+prms
+    .then(function (res) {
+        console.log("result ", res);
+    })
+    .catch(function (err) {
+        console.log(prms);
+    });

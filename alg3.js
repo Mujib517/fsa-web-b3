@@ -19,7 +19,9 @@
     0                 0  0/10  = 0
     0       
 */
+// -1234 == 1234
 function sumOfDigits(n) {
+    n = Math.abs(n);
     var sum = 0;
     while (n > 0) {
         var digit = n % 10;
