@@ -52,4 +52,17 @@ function mulAsync(a, b) {
 
 
 
+var m1 = {
+    width: 5,
+    heigth: 7
+}
+
+Object.defineProperty(m1, 'width', {
+    writable: false,
+    enumerable: true
+});
+
+m1.width = 1000;
+
+console.log(m1);
 
